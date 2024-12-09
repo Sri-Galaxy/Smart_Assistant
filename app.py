@@ -4,12 +4,12 @@ import pyttsx3 as tts
 
 engine = tts.init()
 
-def response(text):
+def res(text):
     engine.say(text)
     engine.runAndWait()
 
 
-def request(c):
+def req(c):
     if "open google" in c:
         wb.open("https://google.com")
     elif "open youtube" in c:
@@ -17,7 +17,7 @@ def request(c):
 
 
 if __name__ == "__main__":
-    response("Hello Sri I am Asher!")
+    res("Hello Sri I am Asher!")
 
     while True:
         r = sr.Recognizer()
@@ -31,14 +31,14 @@ if __name__ == "__main__":
             word = r.recognize_google(audio)
 
             if(word.lower() == "asher"):
-                response("Yes Boss")
+                res("Yes Boss")
 
                 with sr.Microphone() as source:
                     print("Asher Active..!")
                     audio = r.listen(source, timeout=2, phrase_time_limit=1)
                     command = r.recognize_google(audio)
 
-                    request(command.lower())
+                    req(command.lower())
 
         except Exception as e:
             print(f"ERROR: {e}")
