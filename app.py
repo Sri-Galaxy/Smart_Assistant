@@ -14,6 +14,10 @@ def req(c):
         wb.open("https://google.com")
     elif "open youtube" in c:
         wb.open("https://youtube.com")
+    elif "open netflix" in c:
+        wb.open("https://netflix.com")
+    else:
+        pass
 
 
 if __name__ == "__main__":
