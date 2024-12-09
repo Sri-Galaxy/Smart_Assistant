@@ -24,7 +24,7 @@ if __name__ == "__main__":
             word = r.recognize_google(audio)
 
             if(word.lower() == "asher"):
-                print("Jo hukum mere aaka..!")
+                speak("Jo hukum mere aaka..!")
 
                 with sr.Microphone() as source:
                     print("Asher Active..!")
@@ -32,5 +32,5 @@ if __name__ == "__main__":
                     command = r.recognize_google(audio)
         except Exception as e:
             print(e)
-            
+
 
