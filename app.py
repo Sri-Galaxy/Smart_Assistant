@@ -11,8 +11,10 @@ def speak(text):
 
 def processCommand(c):
     if "open google" in c.lower():
+        speak("Opening Google.com")
         wb.open("https://google.com")
     elif "open youtube" in c.lower():
+        speak("Opening Youtube")
         wb.open("https://youtube.com")
     else:
         pass
