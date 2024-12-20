@@ -16,32 +16,35 @@ def processCommand(c):
     elif "open youtube" in c.lower():
         speak("Opening Youtube")
         wb.open("https://youtube.com")
-    else:
-        pass
-        
+    elif "open instagram" in c.lower():
+        speak("Opening Instagram")
+        wb.open("https://instagram.com")
+    elif "shutdown" in c.lower():
+        speak("Thank you for the day.")
+        exit(0)
+
+
 
 if __name__ == "__main__":
-    speak("----------This is Jarvis!----------")
-    print("----------This is Jarvis!----------")
+    speak("This is Jarvis!")
 
     while True:
         r = sr.Recognizer()
         
         try:
             with sr.Microphone() as source:
-                print("\nSay Something..!\n")
+                print("\nUnder your Command..!\n")
                 audio = r.listen(source, timeout=2, phrase_time_limit=1)
             word = r.recognize_google(audio)
             
             if(word.lower() == "jarvis"):
-                print("Yes Boss..\n")
                 speak("Yes Boss!")
                 
                 with sr.Microphone() as source:
                     print("Jarvis is Active..!")
                     audio = r.listen(source)
                     command = r.recognize_google(audio)
-
+                    print(command)
                     processCommand(command)
                     
         except Exception as e:
