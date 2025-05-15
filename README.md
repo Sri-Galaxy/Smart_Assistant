@@ -1,16 +1,16 @@
 **#1 Project Structure**
-- Ensure all files in same Directory/Folder (i.e., Smart_Assistant).
-- Create a virtual environment(recommended).
-- Create a file with name ".env" to store your API_KEY and copy-paste the last line of ".gitignore" file into this .env file.
+- Ensure that all the files are in the same Directory/Folder (i.e., Smart_Assistant).
+- Create a virtual environment(recommended) else optional.
+- Create a file with name **".env"** to store your API_KEY and copy-paste the last line of ".gitignore" file into this .env file.
 
 **#2 Installing Dependencies...**
-- Open terminal and ensure the path, then run **pip install -r requirements.txt** to install dependencies.
+- Open the terminal and check the path, then run the command "**pip install -r requirements.txt**" to install all the required dependencies.
 
 **#3 Execution...**
-- Once Everything is finished, run **app.py** file in terminal to activate Assistant.
+- Once Everything is finished, run this "**app.py**" file in the terminal to activate the Assistant.
 
-- Once it is executed, it will make a sound **"This is Jarvis!"**, the terminal would start printing "Under Your Command Sir"
+- Once it is executed, now it will make a sound **"This is Jarvis!"**, then the terminal would start printing "Under Your Command Sir".
 
-- Now you need to say **"Jarvis"** to activate the assistant, if activate it will say "Yes Boss", otherwise it will keep on prompting.
+- Now you need to say **"Jarvis"** to activate the assistant, if activated it will say "Yes Boss", otherwise it will keep on prompting.
 
-**To stop say "shutdown" or press "Ctrl+C"**
+**To stop say "shutdown"(if activated) or press "Ctrl+C"**
