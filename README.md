@@ -6,8 +6,10 @@
 - Create a virtual environment(recommended) else optional.
 - Create a file with name **".env"** to store your API_KEY and copy-paste the last line of ".gitignore" file into this .env file.
 
+
 **#2 Installing Dependencies...**
 - Open the terminal and check the path, then run the command "**pip install -r requirements.txt**" to install all the required dependencies.
+  
 
 **#3 Execution...**
 - Once Everything is finished, run this "**app.py**" file in the terminal to activate the Assistant.
