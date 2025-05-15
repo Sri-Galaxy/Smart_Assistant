@@ -1,3 +1,6 @@
+                                                                              JARVIS - The Smart AI Assistant
+                                                                              
+
 **#1 Project Structure**
 - Ensure that all the files are in the same Directory/Folder (i.e., Smart_Assistant).
 - Create a virtual environment(recommended) else optional.
