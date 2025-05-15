@@ -1,7 +1,7 @@
 import speech_recognition as sr
 import webbrowser as wb
 import pyttsx3 as tts
-
+import my_model as gm
 engine  = tts.init()
 
 def speak(text):
@@ -22,6 +22,10 @@ def processCommand(c):
     elif "shutdown" in c.lower():
         speak("Thank you for the day.")
         exit(0)
+    else:
+        speak("Hmm, let me think...")
+        reply = gm.gemini_response(c)
+        speak(reply)
 
 
 
@@ -33,7 +37,7 @@ if __name__ == "__main__":
         
         try:
             with sr.Microphone() as source:
-                print("\nUnder your Command..!\n")
+                print("\nUnder your Command Sir...!\n")
                 audio = r.listen(source, timeout=2, phrase_time_limit=1)
             word = r.recognize_google(audio)
             
