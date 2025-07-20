@@ -1,21 +1,45 @@
-                                                  JARVIS - The Smart AI Assistant
-                                                                              
+# JARVIS - The Smart AI Assistant
 
-**#1 Project Structure**
-- Ensure that all the files are in the same Directory/Folder (i.e., Smart_Assistant).
-- Create a virtual environment(recommended) else optional.
-- Create a file with name **".env"** to store your API_KEY and copy-paste the last line of ".gitignore" file into this .env file.
+## Project Overview
+JARVIS is a smart AI assistant designed to respond to voice commands and assist with various tasks. This project demonstrates the integration of voice recognition and AI capabilities in a Python-based application.
 
+---
 
-**#2 Installing Dependencies...**
-- Open the terminal and check the path, then run the command "**pip install -r requirements.txt**" to install all the required dependencies.
-  
+## Project Structure
+- Ensure all files are located in the `Smart_Assistant` directory.
+- It is recommended to create a virtual environment for the project (optional but preferred).
+- Create a `.env` file to store your API key. Copy the last line from the `.gitignore` file into the `.env` file and replace `REPLACE_WITH_YOUR_API_KEY` with your actual API key.
 
-**#3 Execution...**
-- Once Everything is finished, run this "**app.py**" file in the terminal to activate the Assistant.
+---
 
-- Once it is executed, now it will make a sound **"This is Jarvis!"**, then the terminal would start printing "Under Your Command Sir".
+## Installation
 
-- Now you need to say **"Jarvis"** to activate the assistant, if activated it will say "Yes Boss", otherwise it will keep on prompting.
+1. **Set Up Environment**:
+   - If using a virtual environment, create and activate it.
 
-**To stop say "shutdown"(if activated) or press "Ctrl+C"**
+2. **Install Dependencies**:
+   - Open a terminal, navigate to the project directory, and run:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+---
+
+## Usage
+
+1. **Run the Application**:
+   - Execute the `app.py` file in the terminal:
+     ```bash
+     python app.py
+     ```
+
+2. **Interaction**:
+   - Upon successful execution, you will hear the sound: *"This is Jarvis!"*.
+   - The terminal will display: *"Under Your Command Sir"*.
+   - Say **"Jarvis"** to activate the assistant. If activated, it will respond with *"Yes Boss"*. Otherwise, it will keep prompting for activation.
+
+---
+
+## Notes
+- Ensure your microphone is properly configured for voice input.
+- For any issues, check the dependencies and ensure the `.env` file is correctly set up.
